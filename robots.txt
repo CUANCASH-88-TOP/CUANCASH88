@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cuancash-88-top.github.io/CUANCASH88/sitemap.xml
