@@ -7,321 +7,196 @@
 
 <style>
 
+/* RESET */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-background:url('Images/Background2.jpg');
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
-font-family:Arial, Helvetica, sans-serif;
+  background:url('Images/Background2.jpg');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
-
 header{
-background:url('Images/Background2.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:30px 60px;
-border-bottom:2px solid gold;
+  background:url('Images/Background2.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 60px;
+  border-bottom:2px solid gold;
 }
 
+.logo img{
+  width:180px;
+  height:auto;
+}
 
 nav a{
-color:yellow;
-text-decoration:none;
-margin:0 20px;
-font-weight:bold;
-font-size:20px;
-text-transform:uppercase;
-padding:16px 10px;
-transition:.3s;
+  color:yellow;
+  text-decoration:none;
+  margin:0 20px;
+  font-weight:bold;
+  font-size:20px;
+  text-transform:uppercase;
+  padding:16px 10px;
+  transition:.3s;
 }
 
 nav a:hover{
-color:gold;
-text-shadow:
-0 0 5px gold,
-0 0 10px gold,
-0 0 20px gold;
+  color:gold;
+  text-shadow:0 0 10px gold;
 }
 
 .menu-btn{
-display:flex;
-gap:12px;
+  display:flex;
+  gap:12px;
 }
 
 .login{
-border:2px solid gold;
-color:gold;
-padding:16px 32px;
-border-radius:10px;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-transition:.3s;
-}
-
-.login:hover{
-background:#222;
-box-shadow:0 0 15px gold;
+  border:2px solid gold;
+  color:gold;
+  padding:16px 32px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
 }
 
 .daftar{
-background:gold;
-color:black;
-padding:16px 32px;
-border-radius:10px;
-text-decoration:none;
-font-size:20px;
-font-weight:bold;
-transition:.3s;
-}
-
-.daftar:hover{
-opacity:.9;
-box-shadow:0 0 15px gold;
+  background:gold;
+  color:black;
+  padding:16px 32px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
 }
 
 /* BANNER */
-
 .slider{
-text-align:center;
-padding:30px 0;
-border-bottom:2px solid gold;
+  text-align:center;
+  padding:30px 0;
+  border-bottom:2px solid gold;
 }
 
 .slider img{
-max-width:900px;
-width:90%;
-height:auto;
-display:inline-block;
-border-radius:15px;
-box-shadow:0 0 20px rgba(255,215,0,0.5);
+  max-width:900px;
+  width:90%;
+  height:auto;
+  border-radius:15px;
 }
 
-/* STATISTIK */
-
+/* BOX */
 .stats{
-display:flex;
-justify-content:center;
-gap:25px;
-padding:50px;
-flex-wrap:wrap;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:50px;
+  flex-wrap:wrap;
 }
-
 
 .box{
-background:rgba(17,17,17,.9);
-border:1px solid gold;
-width:250px;
-padding:30px;
-text-align:center;
-border-radius:15px;
-transition:.3s;
-text-decoration:none;
-color:white;
-cursor:pointer;
-backdrop-filter:blur(3px);
-}
-
-.box:hover{
-transform:translateY(-8px) scale(1.03);
-box-shadow:0 0 25px gold;
+  background:rgba(17,17,17,.9);
+  border:1px solid gold;
+  width:250px;
+  padding:30px;
+  text-align:center;
+  border-radius:15px;
+  color:white;
+  text-decoration:none;
 }
 
 .box h2{
-font-size:42px;
-color:gold;
-margin-bottom:10px;
-font-weight:bold;
+  font-size:42px;
+  color:gold;
 }
 
 .box p{
-font-size:18px;
+  font-size:18px;
 }
 
 /* ARTIKEL */
-
 .artikel{
-padding:60px;
+  padding:60px;
 }
 
 .artikel h2{
-color:gold;
-font-size:40px;
-margin-bottom:30px;
-text-align:center;
+  color:gold;
+  font-size:40px;
+  text-align:center;
+  margin-bottom:30px;
 }
 
 .card{
-background:#111;
-padding:35px;
-border-radius:15px;
-border:1px solid #333;
-}
-
-.card h3{
-font-size:28px;
-color:gold;
-margin-bottom:20px;
-}
-
-.card p{
-font-size:18px;
-line-height:1.9;
+  background:#111;
+  padding:35px;
+  border-radius:15px;
 }
 
 /* FOOTER */
-
 footer{
-background:url('Images/Background2.jpg');
-background-size:cover;
-background-position:center;
-border-top:2px solid gold;
-padding:35px;
-text-align:center;
-font-size:16px;
-margin-top:50px;
+  background:url('Images/Background2.jpg');
+  text-align:center;
+  padding:35px;
+  border-top:2px solid gold;
 }
 
 /* WHATSAPP */
-
 .wa{
-position:fixed;
-right:20px;
-bottom:20px;
-width:75px;
-height:75px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-box-shadow:0 0 20px rgba(37,211,102,.8);
-z-index:999;
-transition:.3s;
-}
-
-.wa:hover{
-transform:scale(1.1);
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:70px;
+  height:70px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .wa img{
-width:45px;
-height:45px;
-}
-
-.logo img {
-  width: 180px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width:40px;
 }
 
 /* RESPONSIVE */
-
 @media(max-width:768px){
 
-
-nav{
-margin:15px 0;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
+header{
+  flex-direction:column;
+  padding:20px;
 }
 
-nav a{
-margin:5px;
-font-size:18px;
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
 }
 
 .menu-btn{
-display:flex;
-flex-direction:row;
-justify-content:center;
-gap:10px;
-width:100%;
-max-width:none;
-}
-
-.login,
-.daftar{
-flex:1;
-max-width:160px;
-text-align:center;
-padding:12px 20px;
-font-size:16px;
-}
-
-.slider{
-padding:20px 0;
-}
-
-.slider img{
-width:95%;
-height:auto;
+  display:flex;
+  gap:10px;
 }
 
 .stats{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-padding:20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:20px;
 }
 
 .box{
-width:100%;
-padding:25px;
-}
-
-.box h2{
-font-size:36px;
-}
-
-.box p{
-font-size:16px;
-}
-
-.artikel{
-padding:20px;
-}
-
-.artikel h2{
-font-size:30px;
-}
-
-.card{
-padding:20px;
-}
-
-.card h3{
-font-size:22px;
-}
-
-.card p{
-font-size:16px;
-line-height:1.8;
-}
-
-.wa{
-width:65px;
-height:65px;
-}
-
-.wa img{
-width:38px;
-height:38px;
+  width:100%;
 }
 
 }
@@ -338,31 +213,14 @@ height:38px;
 </div>
 
 <nav>
-
-    <a href="https://cuancash88.top/" target="_blank">
-        HOME
-    </a>
-
-    <a href="https://cuancash88-link3.xyz/promotion" target="_blank">
-        PROMO
-    </a>
-
-    <a href="https://infocuancash88.blogspot.com/" target="_blank">
-        BLOG
-    </a>
-
+<a href="https://cuancash88.top/" target="_blank">HOME</a>
+<a href="https://cuancash88-link3.xyz/promotion" target="_blank">PROMO</a>
+<a href="https://infocuancash88.blogspot.com/" target="_blank">BLOG</a>
 </nav>
 
 <div class="menu-btn">
-
-<a href="https://cuancash88-link3.xyz/" class="login">
-LOGIN
-</a>
-
-<a href="https://cuancash88-link3.xyz/register" class="daftar">
-DAFTAR
-</a>
-
+<a href="https://cuancash88-link3.xyz/" class="login">LOGIN</a>
+<a href="https://cuancash88-link3.xyz/register" class="daftar">DAFTAR</a>
 </div>
 
 </header>
@@ -373,52 +231,20 @@ DAFTAR
 
 <section class="stats">
 
-<a href="https://www.youtube.com/@maindicuancash88" target="_blank" class="box">
-    <h2>YT</h2>
-    <p>YOUTUBE</p>
-</a>
-
-<a href="https://web.facebook.com/groups/486888990651415" target="_blank" class="box">
-    <h2>FB</h2>
-    <p>FACEBOOK</p>
-</a>
-
-<a href="https://infocuancash88.blogspot.com/" target="_blank" class="box">
-    <h2>BL</h2>
-    <p>BLOG</p>
-</a>
-
-<a href="https://www.tiktok.com/@hiruka_cuancash88?_r=1&_t=ZS-977UoBDtfTo" target="_blank" class="box">
-    <h2>TT</h2>
-    <p>TIKTOK</p>
-</a>
+<a href="#" class="box"><h2>YT</h2><p>YOUTUBE</p></a>
+<a href="#" class="box"><h2>FB</h2><p>FACEBOOK</p></a>
+<a href="#" class="box"><h2>BL</h2><p>BLOG</p></a>
+<a href="#" class="box"><h2>TT</h2><p>TIKTOK</p></a>
 
 </section>
 
 <section class="artikel">
-
 <h2>SELAMAT DATANG DI CUANCASH88</h2>
-
 <div class="card">
-
-<h3>Platform Game Online Modern dan Responsif</h3>
-
 <p>
-CUANCASH88 hadir dengan tampilan modern yang dapat diakses melalui
-desktop maupun smartphone. Dengan sistem yang cepat dan responsif,
-pengguna dapat menikmati pengalaman bermain yang nyaman kapan saja.
+CUANCASH88 hadir dengan tampilan modern dan responsif untuk desktop dan smartphone.
 </p>
-
-<br>
-
-<p>
-Didukung berbagai fitur modern dan akses yang mudah, platform ini
-dirancang untuk memberikan pengalaman pengguna yang optimal dengan
-navigasi yang sederhana serta tampilan yang elegan.
-</p>
-
 </div>
-
 </section>
 
 <footer>
@@ -426,7 +252,7 @@ navigasi yang sederhana serta tampilan yang elegan.
 </footer>
 
 <a href="https://wa.me/6282163521904" class="wa" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+<img src="https://cdn-icons-png.flaticon.com/512/220/220236.png">
 </a>
 
 </body>
