@@ -31,7 +31,9 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:30px 60px;
+  padding:20px 30px;
+  flex-wrap:wrap;
+  gap:15px;
   border-bottom:2px solid gold;
 }
 
@@ -51,6 +53,13 @@ nav a{
   transition:.3s;
 }
 
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+
 nav a:hover{
   color:gold;
   text-shadow:0 0 10px gold;
@@ -58,7 +67,9 @@ nav a:hover{
 
 .menu-btn{
   display:flex;
-  gap:12px;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
 .login{
@@ -180,11 +191,6 @@ nav{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:10px;
-}
-
-.menu-btn{
-  display:flex;
   gap:10px;
 }
 
