@@ -20,6 +20,7 @@
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -36,7 +37,6 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
-
 header{
 background:url('Images/Background2.jpg');
 background-size:cover;
@@ -53,6 +53,7 @@ height:325px;
 filter:drop-shadow(0 0 12px gold);
 }
 
+/* NAV */
 nav a{
 color:yellow;
 text-decoration:none;
@@ -66,17 +67,15 @@ transition:.3s;
 
 nav a:hover{
 color:gold;
-text-shadow:
-0 0 5px gold,
-0 0 10px gold,
-0 0 20px gold;
+text-shadow:0 0 10px gold;
 }
 
-.menu-btn {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+/* LOGIN DAFTAR */
+.menu-btn{
+display:flex;
+gap:10px;
+justify-content:center;
+align-items:center;
 }
 
 .login{
@@ -89,10 +88,6 @@ font-size:20px;
 font-weight:bold;
 }
 
-.login:hover{
-background:#222;
-}
-
 .daftar{
 background:gold;
 color:black;
@@ -103,12 +98,7 @@ font-size:20px;
 font-weight:bold;
 }
 
-.daftar:hover{
-opacity:.9;
-}
-
-/* BANNER */
-
+/* SLIDER */
 .slider{
 text-align:center;
 padding:0 0 30px 0;
@@ -119,14 +109,10 @@ border-bottom:2px solid gold;
 .slider img{
 max-width:1200px;
 width:100%;
-height:auto;
-display:inline-block;
 border-radius:15px;
-box-shadow:0 0 20px rgba(255,215,0,0.5);
 }
 
-/* STATISTIK */
-
+/* STATS */
 .stats{
 display:grid;
 grid-template-columns:repeat(2,175px);
@@ -143,7 +129,6 @@ padding:20px;
 text-align:center;
 border-radius:12px;
 transition:.3s;
-
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -151,48 +136,15 @@ align-items:center;
 min-height:130px;
 }
 
-.box:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px gold;
-}
-
-.box h2{
-font-size:24px;
-color:gold;
-margin-bottom:10px;
-}
-
-.box p{
-font-size:13px;
-}
-
-.youtube{
-background:#c62828;
-}
-
-.blog{
-background:#b85c00;
-}
-
-.facebook{
-background:#1565c0;
-}
-
-.tiktok{
-background:#111;
-}
+/* WARNA BOX */
+.youtube{background:#c62828;}
+.blog{background:#b85c00;}
+.facebook{background:#1565c0;}
+.tiktok{background:#111;}
 
 /* ARTIKEL */
-
 .artikel{
 padding:60px;
-}
-
-.artikel h2{
-color:gold;
-font-size:40px;
-margin-bottom:30px;
-text-align:center;
 }
 
 .card{
@@ -202,32 +154,15 @@ border-radius:15px;
 border:1px solid #333;
 }
 
-.card h3{
-font-size:28px;
-color:gold;
-margin-bottom:20px;
-}
-
-.card p{
-font-size:18px;
-line-height:1.9;
-}
-
 /* FOOTER */
-
 footer{
 background:url('Images/Background2.jpg');
-background-size:cover;
-background-position:center;
-border-top:2px solid gold;
 padding:35px;
 text-align:center;
-font-size:16px;
-margin-top:50px;
+border-top:2px solid gold;
 }
 
 /* WHATSAPP */
-
 .wa{
 position:fixed;
 right:20px;
@@ -239,21 +174,11 @@ border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-box-shadow:0 0 20px rgba(37,211,102,.8);
-z-index:999;
-transition:.3s;
 }
 
-.wa:hover{
-transform:scale(1.1);
-}
-
-.wa img{
-width:45px;
-height:45px;
-}
-
-/* RESPONSIVE */
+/* ===================== */
+/* MOBILE RESPONSIVE */
+/* ===================== */
 
 @media(max-width:768px){
 
@@ -262,24 +187,55 @@ flex-direction:column;
 padding:20px;
 }
 
+/* LOGO BESAR DI MOBILE */
 .logo img{
-height:100px;
+height:160px !important;
 }
 
+/* LOGIN DAFTAR SEJAJAR DI MOBILE */
+.menu-btn{
+display:flex !important;
+flex-direction:row !important;
+gap:10px;
+}
+
+/* BUTTON LEBIH KECIL */
+.login, .daftar{
+padding:12px 20px;
+font-size:16px;
+}
+
+/* NAV */
 nav{
 margin:20px 0;
 }
 
 nav a{
-display:inline-block;
+font-size:18px;
 margin:10px;
+}
+
+/* BOX SOSMED KECIL */
+.stats{
+grid-template-columns:repeat(2,120px);
+gap:10px;
+}
+
+.box{
+width:120px;
+min-height:90px;
+padding:12px;
+}
+
+.box h2{
 font-size:18px;
 }
 
-.menu-btn{
-flex-direction:column;
+.box p{
+font-size:11px;
 }
 
+/* SLIDER */
 .slider{
 height:250px;
 }
@@ -288,6 +244,7 @@ height:250px;
 height:250px;
 }
 
+/* ARTIKEL */
 .artikel{
 padding:20px;
 }
@@ -314,100 +271,58 @@ font-size:16px;
 </div>
 
 <nav>
-
-    <a href="https://cuancash88.top/" target="_blank">
-        HOME
-    </a>
-
-    <a href="https://cuancash88-link3.xyz/promotion" target="_blank">
-        PROMO
-    </a>
-
+<a href="#">HOME</a>
+<a href="#">PROMO</a>
 </nav>
 
 <div class="menu-btn">
 
-<a href="https://cuancash88-link3.xyz/" class="login">
-LOGIN
-</a>
-
-<a href="https://cuancash88-link3.xyz/register" class="daftar">
-DAFTAR
-</a>
+<a href="#" class="login">LOGIN</a>
+<a href="#" class="daftar">DAFTAR</a>
 
 </div>
 
 </header>
 
 <section class="slider">
-<img src="Images/Banner4.png" alt="Banner CUANCASH88">
+<img src="Images/Banner4.png">
 </section>
 
 <section class="stats">
 
-<a href="https://www.youtube.com/@maindicuancash88" target="_blank" style="text-decoration:none;color:white;">
-<div class="box youtube">
-<h2>▶</h2>
-<p>YOUTUBE</p>
-</div>
+<a href="#">
+<div class="box youtube"><h2>▶</h2><p>YOUTUBE</p></div>
 </a>
 
-<a href="https://infocuancash88.blogspot.com/" target="_blank" style="text-decoration:none;color:white;">
-<div class="box blog">
-<h2>📝</h2>
-<p>BLOG</p>
-</div>
+<a href="#">
+<div class="box blog"><h2>📝</h2><p>BLOG</p></div>
 </a>
 
-<a href="https://web.facebook.com/groups/486888990651415" target="_blank" style="text-decoration:none;color:white;">
-<div class="box facebook">
-<h2>f</h2>
-<p>FACEBOOK</p>
-</div>
+<a href="#">
+<div class="box facebook"><h2>f</h2><p>FACEBOOK</p></div>
 </a>
 
-<a href="https://www.tiktok.com/@hiruka_cuancash88?_r=1&_t=ZS-977UoBDtfTo" target="_blank" style="text-decoration:none;color:white;">
-<div class="box tiktok">
-<h2>♪</h2>
-<p>TIKTOK</p>
-</div>
+<a href="#">
+<div class="box tiktok"><h2>♪</h2><p>TIKTOK</p></div>
 </a>
 
 </section>
 
 <section class="artikel">
-
-<h2>CUANCASH88</h2>
+<h2 style="text-align:center;color:gold;">CUANCASH88</h2>
 
 <div class="card">
-
 <h3>Platform Game Online Modern dan Responsif</h3>
-
-<p>
-CUANCASH88 hadir dengan tampilan modern yang dapat diakses melalui
-desktop maupun smartphone. Dengan sistem yang cepat dan responsif,
-pengguna dapat menikmati pengalaman bermain yang nyaman kapan saja.
-</p>
-
-<br>
-
-<p>
-Didukung berbagai fitur modern dan akses yang mudah, platform ini
-dirancang untuk memberikan pengalaman pengguna yang optimal dengan
-navigasi yang sederhana serta tampilan yang elegan.
-</p>
-
+<p>CUANCASH88 hadir dengan tampilan modern dan responsif...</p>
 </div>
 
 </section>
 
 <footer>
-© 2026 CUANCASH88 - All Rights Reserved
+© 2026 CUANCASH88
 </footer>
 
-<a href="https://wa.me/6282163521904" class="wa" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
-</a>
+<a href="#" class="wa"></a>
 
 </body>
 </html>
