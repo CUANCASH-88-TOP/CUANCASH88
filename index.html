@@ -184,11 +184,21 @@ justify-content:center;
 align-items:center;
 text-decoration:none;
 z-index:9999;
+animation:waFloat 2s ease-in-out infinite;
 }
 
 .wa i{
 font-size:42px;
 color:#fff;
+}
+
+@keyframes waFloat{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-4px);
+}
 }
 
 /* ===================== */
